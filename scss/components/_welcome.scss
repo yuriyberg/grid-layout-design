@@ -1,0 +1,17 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  &-title {
+    margin-bottom: 1rem;
+    font-size: 1.825rem;
+  }
+
+  &-text {
+    color: #938b85;
+    font-size: .825rem;
+  }
+}

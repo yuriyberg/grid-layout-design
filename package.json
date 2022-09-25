@@ -1,0 +1,14 @@
+{
+  "name": "grid-layout-design",
+  "source": "./index.html",
+  "scripts": {
+    "start:dev": "yarn parcel",
+    "build": "yarn parcel build"
+  },
+  "dependencies": {
+    "parcel": "latest"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.7.0"
+  }
+}
