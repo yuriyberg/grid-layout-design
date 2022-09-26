@@ -32,6 +32,12 @@ export default class Slider {
                 this.#currentIndex = 0;
                 this.#root.style.transform = `translateX(${-this.#currentIndex * this.#offsetWidth}px)`;
             }
+
+            if (this.#currentIndex <= -1) {
+                this.#root.style.transition = 'none';
+                this.#currentIndex = this.#initialLength;
+                this.#root.style.transform = `translateX(${-this.#currentIndex * this.#offsetWidth}px)`;
+            }
         });
     }
 
@@ -66,6 +72,7 @@ export default class Slider {
     }
 
     prevSlide = () => {
+        if (this.#currentIndex < -1) return;
         this.#currentIndex--;
         this.#root.style.transition = `transform .3s`;
         this.#root.style.transform = `translateX(${-this.#currentIndex * this.#offsetWidth}px)`;
