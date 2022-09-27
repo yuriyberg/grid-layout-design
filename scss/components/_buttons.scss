@@ -1,12 +1,16 @@
 .button {
   background: none;
-  padding: .8em 1em;
+  padding: .8em 2em;
   border: none;
   cursor: pointer;
   border-radius: 50px;
+  color: white;
 
   &-default {
     background: black;
-    color: white;
+  }
+
+  &-orange {
+    background: #d97c69;
   }
 }
