@@ -1,5 +1,10 @@
 @import 'components/welcome';
 @import 'components/present';
+@import 'components/works';
+@import 'components/slider';
+@import 'components/buttons';
+@import 'components/logo';
+@import 'components/header';
 
 :root {
   font-family: sans-serif;
@@ -36,58 +41,4 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, auto);
   grid-row-gap: 45px;
-}
-
-.header {
-  padding: 10px 0;
-  outline: 1px solid black;
-}
-
-.works {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-row-gap: 1.825em;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-
-  &-slider {
-    margin-left: calc(-100vw / 2 + 900px / 2);
-    margin-right: calc(-100vw / 2 + 900px / 2);
-  }
-}
-
-.slider {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 225px;
-
-  &-item {
-    border-radius: .25em;
-    background: darken(#eee, 50%);
-    color: white;
-    flex-basis: 335px;
-    flex-shrink: 0;
-    margin: 0 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2rem;
-  }
-
-  &-button {
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 14px;
-    cursor: pointer;
-
-    &+& {
-      margin-left: 1em;
-    }
-  }
 }

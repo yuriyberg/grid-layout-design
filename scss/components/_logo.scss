@@ -1,0 +1,21 @@
+.logo {
+  width: 40px;
+  height: 40px;
+  background: black;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #fef7f1;
+
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+}

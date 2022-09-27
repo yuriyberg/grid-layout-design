@@ -1,0 +1,34 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 225px;
+
+  &-item {
+    border-radius: .25em;
+    background: darken(#eee, 50%);
+    color: white;
+    flex-basis: 335px;
+    flex-shrink: 0;
+    margin: 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+  }
+
+  &-button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    cursor: pointer;
+
+    &+& {
+      margin-left: 1em;
+    }
+  }
+}

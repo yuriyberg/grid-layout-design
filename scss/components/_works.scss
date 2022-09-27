@@ -1,0 +1,13 @@
+.works {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 1.825em;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+
+  &-slider {
+    margin-left: calc(-100vw / 2 + 900px / 2);
+    margin-right: calc(-100vw / 2 + 900px / 2);
+  }
+}
